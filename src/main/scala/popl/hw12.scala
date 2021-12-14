@@ -90,7 +90,7 @@ object hw12 extends js.util.JsApp {
         fts1.foldLeft((Some(Map.empty): Option[Map[Fld, (Mut, Typ)]])) {
           case (fts_common_opt, (h, (mut_h, t_h))) =>
             fts2.get(h) match {
-               /** MeetObjNO, MeetObjVar_=, MeetObjMut_!=, MeetObjConst */
+               /** MeetObjConst, MeetObjLet, MeetObjConstLet, MeetObjLetConst, MeetObjNO */
               case None => ???
               case Some((mutp_h, tp_h)) => ???
             }
